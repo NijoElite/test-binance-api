@@ -1,0 +1,16 @@
+.Diff-ListsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Diff {
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.Diff-SymbolContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}

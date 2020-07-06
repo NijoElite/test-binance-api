@@ -1,0 +1,18 @@
+.Nav {
+    display: flex;
+    width: 100%;
+    justify-content: stretch;
+}
+
+.Nav-Item {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .15s ease;
+
+    &:hover {
+        background: rgb(240, 185, 11);
+    }
+}

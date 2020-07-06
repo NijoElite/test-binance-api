@@ -1,0 +1,79 @@
+$border-color: #1e1e1e;
+
+.Table-Root {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.Table-Row {
+    height: 30px;
+}
+
+.Table-Head {
+    .Table-Row:last-child {
+        border: 2px solid $border-color;
+    }
+}
+
+.Table-HeadCell {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Table-Cell {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    overflow-x: hidden;
+
+    &_align {
+        &_center {
+            text-align: center;
+        }
+
+        &_left {
+            text-align: left;
+        }
+
+        &_right {
+            text-align: right;
+        }
+    }
+
+    &_borderRight {
+        border-right: 2px solid $border-color;
+    }
+
+    &_borderLeft {
+        border-left: 2px solid $border-color;
+    }
+
+    &_color_red {
+        color: rgb(248, 73, 96);
+    }
+
+    &_color_green {
+        color: rgb(2, 192, 118);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Table-Cell {
+        padding: 4px;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            display: block;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+    }
+}

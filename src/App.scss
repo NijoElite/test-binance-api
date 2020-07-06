@@ -1,0 +1,27 @@
+.Body {
+    margin: 0;
+    background: rgb(20, 21, 26);
+    color: rgb(255, 255, 255);
+}
+
+.App-ContentWrapper {
+    display: flex;
+    overflow: hidden;
+    height: calc(100vh - 60px);
+    justify-content: center;
+}
+
+.App-Nav {
+    max-width: 960px;
+}
+
+.App-Content {
+    width: 100%;
+}
+
+.App-NavWrapper {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    background: rgb(30, 30, 30);
+}
